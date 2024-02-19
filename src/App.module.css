@@ -1,0 +1,91 @@
+/* Styles for .footer */
+.footer {
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  color: black;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+}
+
+/* Styles for link */
+link {
+  text-decoration: none;
+  color: rgba(21, 101, 192);
+}
+
+/* Styles for image */
+image {
+  margin-left: 20px;
+}
+
+/* Styles for card */
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 3%;
+  border-radius: 10px;
+  color: white;
+  background-color: rgba(21, 101, 192);
+  margin: 0 12px;
+  text-align: center;
+  height: 25vmin;
+}
+
+/* Styles for infoContainer */
+.infoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Styles for logoContainer */
+.logoContainer {
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+/* Styles for alanLogo */
+.alanLogo {
+  height: 27vmin;
+  border-radius: 15%;
+  padding: 0 5%;
+  margin: 3% 0;
+}
+
+/* Media Query for smaller screens (max-width: 600px) */
+@media screen and (max-width: 600px) {
+  /* Styles for .footer */
+  .footer {
+    display: none;
+  }
+
+  /* Styles for card on smaller screens */
+  .card {
+    flex-direction: column-reverse;
+    text-align: center;
+    width: 100%;
+    height: initial;
+    margin-bottom: 12px;
+  }
+
+  /* Styles for logoContainer on smaller screens */
+  .logoContainer {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  /* Styles for alanLogo on smaller screens */
+  .alanLogo {
+    height: 35vmin;
+  }
+}
